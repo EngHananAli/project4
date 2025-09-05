@@ -27,7 +27,9 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
+     .table-box::-webkit-scrollbar {
+      height: 6px;
+       }
         .table-title {
             text-align: center;
             color: #0d6efd;
@@ -81,13 +83,16 @@
     </nav>
 
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-12">
-                <div class="table-box">
-                    <h3 class="table-title">📋 قائمة الطلبات</h3>
+    <div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
+            <div class="table-box">
+                <h3 class="table-title">📋 قائمة الطلبات</h3>
+
+               
+                <div class="table-responsive">
                     <table class="table table-bordered table-striped text-center">
-                        <thead class="table table-info" >
+                        <thead class="table table-info">
                             <tr>
                                 <th>رقم الطلب</th>
                                 <th>اسم الموظف</th>
@@ -103,7 +108,7 @@
                                 <td>أحمد علي</td>
                                 <td>المالية</td>
                                 <td>كمبيوتر</td>
-                                <td><span class="badge bg-warning  ">قيد المعالجة</span></td>
+                                <td><span class="badge bg-warning">قيد المعالجة</span></td>
                                 <td><a href="#" class="btn btn-sm btn-info">عرض</a></td>
                             </tr>
                             <tr>
@@ -111,20 +116,23 @@
                                 <td>سارة محمد</td>
                                 <td>الموارد البشرية</td>
                                 <td>طابعة</td>
-                                <td><span class="badge bg-success ">تم الإنجاز</span></td>
+                                <td><span class="badge bg-success">تم الإنجاز</span></td>
                                 <td><a href="detail.html" class="btn btn-sm btn-info">عرض</a></td>
                             </tr>
-                            <!-- المزيد من الطلبات -->
+                          
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </div>
     </div>
+</div>
     <footer class="d-flex border border-1  p-2 mb-0 fixed-bottom justify-content-center text-white ">  &copy; 2025 - منظومة طلبات الصيانة | المؤسسة الإدارية</footer>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/jquery/jquery.min.js"></script>
 </body>
 </html>
+
 
 
